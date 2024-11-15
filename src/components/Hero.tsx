@@ -40,7 +40,7 @@ export default function Hero() {
           <div className="mt-16 flow-root sm:mt-24">
             <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image 
-                src="/images/pro.jpg?height=300&width=300"
+                src="/images/prom.jpg?height=300&width=300"
                 alt="Dawit Yitagesu Mekonnen"
                 width={300}
                 height={300}
