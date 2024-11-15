@@ -6,7 +6,6 @@ interface Project {
   description: string
   techStack: string[]
   image: string
-  demoLink: string
   githubLink: string
 }
 
@@ -47,7 +46,7 @@ export default function Deliverd({ projects = [] }: ProjectsProps) {
               </div>
               <div className="group relative">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={project.demoLink}>
+                  <a href={project.githubLink}>
                     <span className="absolute inset-0" />
                     {project.title}
                 </a>
