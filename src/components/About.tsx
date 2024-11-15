@@ -48,7 +48,7 @@ export default function About() {
             </div>
           </div>
           <Image
-            src="/placeholder.svg?height=300&width=300"
+            src="/images/pro.jpg?height=300&width=300"
             alt="Product screenshot"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             width={2432}

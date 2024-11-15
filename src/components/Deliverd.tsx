@@ -1,38 +1,32 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
 interface Project {
-  title: string;
-  description: string;
-  techStack: string[];
-  image: string;
-  // demoLink: string;
-  githubLink: string;
+  title: string
+  description: string
+  techStack: string[]
+  image: string
+  demoLink: string
+  githubLink: string
 }
 
 interface ProjectsProps {
-  projects: Project[];
+  projects: Project[]
 }
 
-export default function Projects({ projects = [] }: ProjectsProps) {
+export default function Deliverd({ projects = [] }: ProjectsProps) {
   return (
     <div id="projects" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            My Projects
-          </h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Deliverd Projects</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            A showcase of my recent work and contributions to the tech
-            community.
+            A showcase Projects I worked in.
           </p>
         </div>
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {projects.map((project) => (
-            <article
-              key={project.title}
-              className="flex max-w-xl flex-col items-start justify-between"
-            >
+            <article key={project.title} className="flex max-w-xl flex-col items-start justify-between">
               <div className="relative w-full h-48 mb-4">
                 <Image
                   src={project.image}
@@ -53,14 +47,12 @@ export default function Projects({ projects = [] }: ProjectsProps) {
               </div>
               <div className="group relative">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={project.githubLink}>
+                  <a href={project.demoLink}>
                     <span className="absolute inset-0" />
                     {project.title}
-                  </a>
+                </a>
                 </h3>
-                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                  {project.description}
-                </p>
+                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{project.description}</p>
               </div>
               <div className="mt-8 flex items-center gap-x-4">
                 {/* <a
@@ -81,5 +73,5 @@ export default function Projects({ projects = [] }: ProjectsProps) {
         </div>
       </div>
     </div>
-  );
+  )
 }
